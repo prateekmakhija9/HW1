@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>This Is My Sample Form</h1>
+      <form>
+        <div class="form-group">
+          <label for="nickname" class="text-dark">Nickname</label>
+          <input type="text" class="form-control" id="nickname" placeholder="Enter Nickname">
+        </div>
+        <div class="form-group">
+          <label for="email" class="text-dark">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="password" class="text-dark">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <label for="radio" class="text-dark">Gender</label>
+        <div class="form-check" id="radio">
+          <input type="radio" value="Male" id="male">
+          <label for="male">Male</label><br/>
+          <input type="radio" value="Female" id="female">
+          <label for="female">female</label><br/>
+          <input type="radio" value="Other" id="other">
+          <label for="other">Other</label><br/>
+          <input type="radio" value="No" id="no">
+          <label for="no">Prefer not to say</label><br/>
+        </div>
+        <div class="form-group">
+          <label for="select">Security Question</label>
+          <select class="form-control" id="select">
+            <option>Favorite pet</option>
+            <option>Favorite band</option>
+            <option>Mother's Maiden name</option>
+            <option>Street you grew up on</option>
+          </select>
+          <label for="answer">Answer</label>
+          <input type="text" class="form-control" id="answer" placeholder="Security Answer">
+        </div>
+        <label for="fav" class="text-dark">Favorite Programming Languages</label>
+        <div class="form-check" id="fav">
+          <input type="checkbox" value="C" id="C">
+          <label for="C">C/C++</label><br/>
+          <input type="checkbox" value="Java" id="java">
+          <label for="java">Java</label><br/>
+          <input type="checkbox" value="Javascript" id="javascript">
+          <label for="javascript">Javascript</label><br/>
+          <input type="checkbox" value="Python" id="python">
+          <label for="python">Python</label><br/>
+          <input type="checkbox" value="GO" id="go">
+          <label for="go">GO</label><br/>
+          <input type="checkbox" value="C#" id="c#">
+          <label for="c#">C#</label><br/>
+          <input type="checkbox" value="PHP" id="php">
+          <label for="php">PHP</label><br/>
+        </div>
+        <div class="form-check">
+          <h5>Additional information</h5>
+          <label for="addition">About Me</label>
+          <textarea class="form-control" id="addition" rows="3"></textarea>
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
